@@ -1,0 +1,14 @@
+
+
+
+➜  PythonAdvanced git:(main) ✗ wc_command hw_1/test_file1.txt                    
+      14       30      231 hw_1/test_file1.txt
+
+➜  PythonAdvanced git:(main) ✗ wc_command hw_1/test_file1.txt hw_1/test_file2.txt
+      14       30      231 hw_1/test_file1.txt
+       7       32      216 hw_1/test_file2.txt
+      21       62      447 total
+
+
+➜  PythonAdvanced git:(main) ✗ cat hw_1/test_file1.txt | wc_command              
+      14       30      231
