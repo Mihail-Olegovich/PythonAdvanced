@@ -1,0 +1,26 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "latex-generator-itmo-kulyaskin"
+packages = [
+    {include = "latex_generator_itmo_kulyaskin"}
+]
+version = "0.1.0"
+description = "Простой генератор LaTeX"
+authors = ["Mikhail Kulyaskin <mihail.ru02@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/Mihail-Olegovich/PythonAdvanced"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Text Processing :: Markup :: LaTeX"
+]
+
+[tool.poetry.dependencies]
+python = ">=3.6"
+
+[tool.poetry.dev-dependencies]

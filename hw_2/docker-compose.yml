@@ -1,0 +1,7 @@
+services:
+  latex-generator:
+    build:
+      context: ..
+      dockerfile: hw_2/Dockerfile
+    volumes:
+      - ./artifacts:/app/hw_2/artifacts 

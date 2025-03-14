@@ -3,12 +3,14 @@ name = "pythonadvanced"
 version = "0.1.0"
 description = ""
 authors = [
-    {name = "Mikhail.Kulyaskin"}
+    {name = "Mikhail.Kulyaskin", email = "mihail.ru02@gmail.com"}
 ]
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "click (>=8.1.8,<9.0.0)"
+    "click (>=8.1.8,<9.0.0)",
+    "setuptools (>=76.0.0,<77.0.0)",
+    "latex-generator-itmo-kulyaskin (>=0.1.0,<0.2.0)"
 ]
 
 
@@ -20,8 +22,13 @@ build-backend = "poetry.core.masonry.api"
 nl_command = "hw_1.nl_module:nl_command"
 tail_command = "hw_1.tail_module:tail_command"
 wc_command = "hw_1.wc_module:wc_command"
+generate_latex = "hw_2.generate_example:main"
 
 [tool.poetry]
 packages = [
-    {include = "hw_1"}
+    {include = "hw_1"},
+    {include = "hw_2"}
 ]
+
+[project.urls]
+Homepage = "https://github.com/Mihail-Olegovich/PythonAdvanced"
