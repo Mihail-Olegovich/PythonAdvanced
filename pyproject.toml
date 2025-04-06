@@ -11,7 +11,9 @@ dependencies = [
     "click (>=8.1.8,<9.0.0)",
     "setuptools (>=76.0.0,<77.0.0)",
     "latex-generator-itmo-kulyaskin (>=0.1.0,<0.2.0)",
-    "numpy (>=2.2.4,<3.0.0)"
+    "numpy (>=2.2.4,<3.0.0)",
+    "aiohttp (>=3.11.16,<4.0.0)",
+    "requests (>=2.32.3,<3.0.0)"
 ]
 
 
@@ -24,6 +26,9 @@ nl_command = "hw_1.nl_module:nl_command"
 tail_command = "hw_1.tail_module:tail_command"
 wc_command = "hw_1.wc_module:wc_command"
 generate_latex = "hw_2.generate_example:main"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
 
 [tool.poetry]
 packages = [
